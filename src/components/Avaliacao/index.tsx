@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import IProfissional from "../../types/IProfissional"
+import Botao from "../Botao"
 import Card from "./Card"
 
 const SecaoCard = styled.section`
@@ -11,11 +12,15 @@ const SecaoCard = styled.section`
 
 const Avaliacao = ({profissionais}: {profissionais: IProfissional[] | null }) => {
   return (
-    <SecaoCard>
+    <>
+     <SecaoCard>
         {profissionais?.map((profissional) => (
             <Card profissional={profissional} />
         ))}
     </SecaoCard>
+    <Botao>Ver mais</Botao> 
+    </>
+    
   )
 }
 

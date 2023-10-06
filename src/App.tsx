@@ -4,6 +4,7 @@ import Cabecalho from './components/Cabecalho';
 import Container from './components/Container';
 import Grafico from './components/Grafico';
 import { Rodape } from './components/Rodape';
+import Subtitulo from './components/Subtitulo';
 import Tabela from './components/Tabela';
 import Titulo from './components/Titulo';
 import useDadosConsulta from './useDadosConsulta';
@@ -25,6 +26,8 @@ function App() {
          Área Administrativa
         </Titulo>
       <Tabela consultas={consultas} />
+      <Titulo imagem="grafico">Consultas mensais por especialista</Titulo>
+      <Subtitulo>Dezembro/22</Subtitulo>
       <Grafico consultas={consultas} profissionais={profissionais} />
       <Avaliacao profissionais={profissionais} />
       </Container>
