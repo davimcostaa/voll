@@ -6,9 +6,9 @@ const Botao = styled.button`
     padding: 12px 16px;
     color: var(--branco);
     border: none;
-    margin-top: 1em;
     font-weight: 700;
     line-height: 19px;
+    cursor: pointer;
 `
 
 export default Botao;

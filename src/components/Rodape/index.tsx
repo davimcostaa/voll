@@ -9,8 +9,8 @@ const RodapeEstilizado = styled.footer`
     color: white;
     padding: 1em;
     background-color: var(--azul-escuro);
-    text-align: center
-
+    text-align: center;
+    margin-top: 25px;
 `
 
 const ListaEstilizada = styled.ul`
