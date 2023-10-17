@@ -13,7 +13,7 @@ const Card = ({profissional}: {profissional: IProfissional}) => {
         color: var(--cinza);
         margin: 2em;
     `
-
+    
     const ListaEstilizada = styled.ul`
         display: flex;
         list-style: none;
@@ -60,7 +60,7 @@ const Card = ({profissional}: {profissional: IProfissional}) => {
             <li>
                 <Rating 
                 name="simple-controlled"
-                value={profissional.nota}
+                value={3}
                 readOnly={true}
                 size="large"
                 />
